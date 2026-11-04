@@ -1,0 +1,255 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#home-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#header h5 {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    font-weight: normal;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#instructions {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+#instructions p {
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 0;
+}
+
+#instructions ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+}
+
+#instructions li {
+    margin-bottom: 8px;
+}
+
+#settings {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+#settings > p {
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 0;
+}
+
+#settings ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#settings li {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+button {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #dcdde1;
+}
+button.selected,
+button:active {
+    background-color: #092d66;
+    color: #ffffff;
+    border-color: #092d66;
+}
+
+#start-button {
+    color: white;
+    display: block;
+    margin: 20px auto 0 auto; /* Adds space above and centers horizontally */
+    background-color: #092d66; 
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#start-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+
+#press-button {
+    background-color: #c8f09a;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(17, 76, 80, 0.3);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#press-button:hover {
+    background-color: #a3d977;
+    transform: translateY(-2px);
+}
+
+#test-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* The box that holds the popping characters */
+#character-container {
+    font-size: 7rem;             /* Extra large characters for high visibility */
+    font-weight: bold;
+    color: #2c3e50;
+    background: #ffffff;
+    width: 220px;                /* Fixed box width */
+    height: 220px;               /* Fixed box height to prevent layout shifting */
+    border-radius: 16px;         /* Smooth rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Soft shadow effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #e2e8f0;   /* Clean border outline */
+}
+
+/* --- Results Screen Styling --- */
+#results-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+#results-screen h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#results-screen p {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#results-screen ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    width: 100%;
+}
+
+#results-screen li {
+    font-size: 1.1rem;
+    color: #34495e;
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#results-screen li:last-child {
+    border-bottom: none;
+}
+
+#results-screen span {
+    font-weight: bold;
+    color: #092d66;
+    font-size: 1.2rem;
+}
+
+#play-again-btn {
+    color: white;
+    background-color: #092d66;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#play-again-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* --- Small Screen Adjustments --- */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    #character-container {
+        width: 180px;
+        height: 180px;
+        font-size: 5.5rem;
+    }
+}

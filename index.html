@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Attention Span Test</title>
+        <link rel="stylesheet"  href="style.css">
+    </head>
+    <body>
+        <!-- Home/Settings Screen -->
+    <div id="home-screen">
+       <div id="header">
+           <h1>Welcome to the Attention Span Test</h1>
+           <h5>Test your attention span by clicking the spacebar when the characters appear except characters H and B.</h5>
+       </div>
+<div id="instructions">
+            <p>Instructions:</p>
+            <ul>
+                <li>Press the spacebar when you see a character appear.</li>
+                <li>Do not press the spacebar for characters H and B.</li>
+                <li>Try to get as many correct as possible!</li>
+            </ul>
+        </div>
+<div id="settings">
+            <p>Settings:</p>
+            <ul>
+                <li>Characters Speed: <button id="easy">easy (1 second) </button> <button id="medium">medium (0.8 second)</button> <button id="hard">hard (0.5 second)</button></li>
+                <li>Target frequency: <button id="low">low (20%)</button> <button id="mediumf">medium (25%)</button> <button id="high">high (30%)</button></li>
+            </ul>
+            </div>
+
+            <button id="start-button"> Start Test</button>
+</div>
+
+            <div id="test-screen" style="display: none;">
+                <p>Watch the characters pop up one by one!</p>
+                <div id="character-container"></div>
+                <p>Press the spacebar when you see a character appear except characters H and B.</p>
+                <button id="press-button">Press</button>
+            </div>
+
+<!-- Results Screen (Initially Hidden) -->
+<div id="results-screen" style="display: none;">
+    <h2>Round Completed!</h2>
+    <p>Here are your final stats:</p>
+    <ul>
+        <li>Total Characters Shown: <span id="final-total">0</span></li>
+        <li>Correct Presses: <span id="final-correct">0</span></li>
+        <li>Incorrect Presses: <span id="final-incorrect">0</span></li>
+    </ul>
+    <button id="play-again-btn">Play Again</button>
+</div>
+            
+            <script src="app.js"></script>
+    </body>
+</html>
